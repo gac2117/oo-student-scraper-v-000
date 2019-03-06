@@ -14,7 +14,9 @@ class Scraper
         name: i.css('.student-name').text
         location: i.css('.student-location').text
       }
+      students << student 
     end
+    binding.pry 
   end
 
   def self.scrape_profile_page(profile_url)
