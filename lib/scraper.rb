@@ -11,7 +11,7 @@ class Scraper
     student_cards = page.css('div.student-card')
     student_cards.each do |i|
       student = {
-        name: i.css('.student-name').text
+        name: i.css('.student-name').text,
         location: i.css('.student-location').text
       }
       students << student
